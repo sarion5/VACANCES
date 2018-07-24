@@ -1,6 +1,7 @@
-var Traits = {
-
-    //basic characteristics of all creatures
+var Objects = {
+    /**
+     * 
+     */
     Characteristics = function (each) {
         name = each.name,
             img = each.img,
@@ -11,6 +12,20 @@ var Traits = {
             copiesNumber = each.copiesNumber
 
         return each;
+    },
+
+    /**
+     * 
+     */
+    SpeciesCards = function (each) {
+        population= each.population,
+        size= each.size,
+        food = each.food,
+        trait1 = each.trait1,
+        trait2 = each.trait2,
+        trait3 = each.trait3
+
+        return 
     },
 
     showCaract = function () {
