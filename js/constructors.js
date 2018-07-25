@@ -1,38 +1,34 @@
     /**
      * CLASS FOR TRAIT CARDS
      */
-    var TraitCards = function (each) {
-        name = each.name,
-            img = each.img,
-            description = each.description,
-            effectBeforeRound = each.effectBeforeRound,
-            effect = each.effect,
-            foodValue = each.foodValue,
-            copiesNumber = each.copiesNumber;
-
-        return each;
-    };
+/*     var TraitCards = function (each) {
+        each.name = name,
+        each.img = img,
+        each.description = description,
+        each.effectBeforeRound = effectBeforeRound,
+        each.effect = effect,
+        each.foodValue = foodValue,
+        each.copiesNumber = copiesNumber
+    }; */
 
     /**
      * SPECIES CARDS
      */
-    var SpeciesCards = function (each) {
-        population = each.population,
-            size = each.size,
-            nourishment = each.nourishment,
-            trait1 = each.trait1,
-            trait2 = each.trait2,
-            trait3 = each.trait3;
-
-        return each;
+    var SpeciesCards = function (population, size, nourishment, trait1, trait2, trait3) {
+        this.population = population,
+            this.size = size,
+            this.nourishment = nourishment,
+            this.trait1 = trait1,
+            this.trait2 = trait2,
+            this.trait3 = trait3
     };
 
     /**
      * PLAYER
      */
-    var Player = (function (each) {
-        name = each.name,
-            species = each.species,
-            totalScore = each.totalScore;
-        return each;
-    });
+    var Player = function (name, species, cardsInit, totalScore) {
+        this.name = name,
+            this.species = species,
+            this.cardsInit = cardsInit,
+            this.totalScore = totalScore
+    };

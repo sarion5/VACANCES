@@ -1,7 +1,7 @@
 /**
  * TRAIT CARDS DETAILS
  */
-var TraitCards =[
+const AllTraitCards =[
     Ambush = {
         name : "Ambush",
         img : "./img/ambush.jpg",
