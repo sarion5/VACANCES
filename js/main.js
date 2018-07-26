@@ -71,11 +71,22 @@
         //////////////////////////////
         //FunctionsRoundPartOne.js////
         //////////////////////////////
+        // cards are distributed, the game is called off
+        // if there isn't enough cards left
         roundPartOne(players, AllTraitCards);
 
         //////////////////////////////
         //FunctionsRoundPartTwo.js////
         //////////////////////////////
+        //
+        //
+        function roundPartTwo(players) {
+            for (let i = 0; i < players.length; i++) {
+                let currentPlayer = players[i];
+
+                
+            }
+        }
 
         //////////////////////////////
         //FunctionsRoundPartThree.js//

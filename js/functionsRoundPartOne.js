@@ -74,7 +74,6 @@ function shuffleDeckAndDistribute(initDeck, currentPlayer) {
  */
 function roundPartOne(players) {
 
-
     //loop on every players
     for (let i = 0; i < players.length; i++) {
 
