@@ -68,10 +68,12 @@ function roundPartOne(players, AllTraitCards) {
                 //shuffle
                 let currentCardNumber = Math.floor(Math.random() * Math.floor(deck.length));
                 let currentCard = deck[currentCardNumber];
+                console.log(currentCard);
                 (currentPlayer.cardsInHand).push(currentCard)
 
                 //take off
-                deck = deck.slice(currentCard);
+                let newDeck = deck.slice(currentCardNumber);
+                console.log(newDeck);
                 console.log(deck.length);
             }
 
