@@ -18,7 +18,7 @@
 
         for (let i = 0; i < nbPlayers; i++) {
             let currentPlayerName = `player${i+1}`;
-            let currentPlayer = new Player(currentPlayerName, 0, 3, 0, []);
+            let currentPlayer = new Player(currentPlayerName, 1, 3, 0, []);
             players.push(currentPlayer);
         }
 
@@ -36,18 +36,28 @@
     //players involved
     var players = initPlayers();
 
-    function checkDeckState(players) {
+    function checkDeckState(initDeck, players) {
 
-        let cardsDistrubution = currentPlayer.cardsInit + currentPlayer.species;
+        let remainingCards = initDeck(AllTraitCards).length;
         let totalCardsToDistribute = 0;
-        let isCardNumberHighEnough = false;
+        let isCardNumberHighEnough;
 
         for (let i = 0; i < players.length; i++) {
-            totalCardsToDistribute
+            let cardsDistrubution = players[i].cardsInit + players[i].species;
+            totalCardsToDistribute += cardsDistrubution;
         }
+
+        remainingCards >= totalCardsToDistribute ? isCardNumberHighEnough = true : isCardNumberHighEnough = false;
+
+
+        return isCardNumberHighEnough;
     }
 
-    ////////////////////////////
-    //FunctionsRoundPartOne.js//
-    ////////////////////////////
-    roundPartOne(players, AllTraitCards);
+    if (checkDeckState(initDeck, players)) {
+        ////////////////////////////
+        //FunctionsRoundPartOne.js//
+        ////////////////////////////
+        roundPartOne(players, AllTraitCards);
+    } else {
+        console.log("dernier tour");
+    }
