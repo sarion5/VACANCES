@@ -26,9 +26,10 @@
     /**
      * PLAYER
      */
-    var Player = function (name, species, cardsInit, totalScore) {
+    var Player = function (name, species, cardsInit, totalScore, cardsInHand) {
         this.name = name,
             this.species = species,
             this.cardsInit = cardsInit,
-            this.totalScore = totalScore
+            this.totalScore = totalScore,
+            this.cardsInHand = cardsInHand
     };
