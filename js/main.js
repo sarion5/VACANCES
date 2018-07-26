@@ -76,13 +76,23 @@
         // if there isn't enough cards left
         roundPartOne(players, AllTraitCards);
 
-        function renderContent(){
-            jQuery(document).ready(function ($) {
+        function renderContent(players) {
+            for (let i = 0; i < players.length; i++) {
+                let currentPlayer = players[i];
+                jQuery(document).ready(function ($) {
 
-                $("#actionsThisTurn").html("blablabla");
-
-            })
+                    let speciesList = "<ul>";
+                    for (i = 0; i < currentPlayer.species; i++) {
+                        speciesList += "<li>";
+                        speciesList += "</li>";
+                        
+                    }
+                    speciesList = "</ul>";
+    
+                })
+            }
         }
+        renderContent();
 
         //////////////////////////////
         //FunctionsRoundPartTwo.js////
