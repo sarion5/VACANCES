@@ -53,8 +53,8 @@ const AllTraitCards =[
     },
 
     DefensiveHerding = {
-        name : "Defensive Herding",
-        img: "./img/traitCards/Defensive Herding.png",
+        name : "DefensiveHerding",
+        img: "./img/traitCards/DefensiveHerding.png",
         description :"A species with Defensive Herding may not be attacked unless the attacking Carnivore has a greater Population.",
         effectBeforeRound : false,
         effect :"none",
@@ -65,7 +65,7 @@ const AllTraitCards =[
 
     FatTissue = {
         name : "Fat Tissue",
-        img : "./img/traitCards/Fat Tissue.png",
+        img : "./img/traitCards/FatTissue.png",
         description : "This species may place food on the Fat Tissue trait card once it has taken food equal to its Population. The food stored on Fat Tissue may not be greater than the Body Size of this species. The food stored on Fat Tissue is neither Plant Food nor Meat Food - it is fat. When the Food Cards are revealed at the beginning of Feeding, move the food on Fat Tissue to this species without exceeding its Population. This does not trigger Cooperation or any other trait that triggers when a species “takes” food. Any food remaining on this trait at the end of the game is discarded and does not count as points.",
         effectBeforeRound : false,
         effect : "none",
@@ -131,7 +131,7 @@ const AllTraitCards =[
 
     LongNeck = {
         name: "Long Neck",
-        img : "./img/traitCards/Long Neck.png",
+        img : "./img/traitCards/LongNeck.png",
         description : "Take 1 Plant Food from the Food Bank (not the Watering Hole) when the Food Cards are revealed.",
         effectBeforeRound : true,
         effect : "none",
@@ -141,7 +141,7 @@ const AllTraitCards =[
 
     PackHunting = {
         name :"Pack Hunting",
-        img :"./img/traitCards/Pack Hunting.png",
+        img :"./img/traitCards/PackHunting.png",
         description : "Add 3 to this species’ Body Size when determining if it can attack another species.",
         effectBeforeRound : false,
         effect : "none",
@@ -174,7 +174,7 @@ const AllTraitCards =[
 
     WarningCall = {
         name :"Warning Call",
-        img :"./img/traitCards/Warning Call.png",
+        img :"./img/traitCards/WarningCall.png",
         description : "If you have a species to the right and/or left of a species with Warning Call, it/they cannot be attacked unless the Carnivore has Ambush. Warning Call does not protect the species that has the Warning Call trait.",
         effectBeforeRound : false,
         effect : "none",
