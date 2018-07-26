@@ -18,7 +18,7 @@
 
         for (let i = 0; i < nbPlayers; i++) {
             let currentPlayerName = `player${i+1}`;
-            let currentPlayer = new Player(currentPlayerName, 1, 3, 0, []);
+            let currentPlayer = new Player(currentPlayerName, 15, 3, 0, []);
             players.push(currentPlayer);
         }
 
@@ -81,18 +81,26 @@
                 let currentPlayer = players[i];
                 jQuery(document).ready(function ($) {
 
-                    let speciesList = "<ul>";
+                    console.log(currentPlayer.species);
+
+                    let speciesList = `<ul>`;
                     for (i = 0; i < currentPlayer.species; i++) {
-                        speciesList += "<li>";
-                        speciesList += "</li>";
-                        
+                        speciesList += `<li>`;
+                        speciesList += `<img src="./img/emptyImages/traitCardModel.png" width="100"/>`;
+                        speciesList += `</li>`;
+
                     }
-                    speciesList = "</ul>";
-    
+                    speciesList += "</ul>";
+
+                    console.log(speciesList);
+
+                    $(`#player1TraitCards`).html(speciesList);
+
                 })
             }
         }
-        renderContent();
+
+        renderContent(players);
 
         //////////////////////////////
         //FunctionsRoundPartTwo.js////
