@@ -59,10 +59,20 @@ function roundPartOne(players, AllTraitCards) {
                 }
             }
 
+            //addition of the three initial cards and the +1 by specie owned by the player
             let cardsDistrubution = currentPlayer.cardsInit + currentPlayer.species;
+
+            //shuffle and take off cards distributed using slice()
             for (let j = 0; j < cardsDistrubution; j++) {
-                let currentCard = Math.floor(Math.random() * Math.floor(deck.length));
-                console.log(currentCard);
+
+                //shuffle
+                let currentCardNumber = Math.floor(Math.random() * Math.floor(deck.length));
+                let currentCard = deck[currentCardNumber];
+                (currentPlayer.cardsInHand).push(currentCard)
+
+                //take off
+                deck = deck.slice(currentCard);
+                console.log(deck.length);
             }
 
 
