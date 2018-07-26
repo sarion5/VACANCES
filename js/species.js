@@ -76,7 +76,7 @@ const AllTraitCards =[
 
     Fertile = {
         name : "Fertile",
-        img : "./img/fertile.jpg",
+        img : "./img/traitsCards/Fertile.jpg",
         description : "Increase this species’ Population by 1 when the Food Cards are revealed at the beginning of the Feeding phase.",
         effectBeforeRound : true,
         effect : "none",
@@ -87,7 +87,7 @@ const AllTraitCards =[
 
     Foraging = {
         name :"Foraging",
-        img : "./img/foraging.jpg",
+        img : "./img/traitsCards/Foraging.jpg",
         description : "This species takes 2 food instead of 1 when Feeding from the Watering Hole (unless it does not have enough Population to take the second food). Foraging does not get triggered by other traits such as Cooperation.",
         effectBeforeRound : false,
         effect :"none",
@@ -98,7 +98,7 @@ const AllTraitCards =[
 
     HardShell = {
         name :"Hard Shell",
-        img :"./img/hardShell.jpg",
+        img :"./img/traitsCards/HardShell.jpg",
         description : "Add 3 to this species’ Body Size when determining if a Carnivore can attack it. A species with Body Size 6 and Hard Shell will have an effective Body Size of 9. Hard Shell does not increase the amount of Meat Food that a Carnivore takes after an attack.",
         effectBeforeRound : false,
         effect : "none",
@@ -109,7 +109,7 @@ const AllTraitCards =[
 
     Horns = {
         name : "Horns",
-        img : "./img/horns.jpg",
+        img : "./img/traitsCards/Horns.jpg",
         description :"A Carnivore must reduce its Population by 1 when attacking this species. The reduction in Population occurs before the Carnivore takes Meat Food for the attack.",
         effectBeforeRound : false,
         effect : "none",
@@ -120,7 +120,7 @@ const AllTraitCards =[
 
     Intelligence = {
         name : "Intelligence",
-        img : "./img/intelligence.jpg",
+        img : "./img/traitsCards/Intelligence.jpg",
         description : "A player with Intelligence on his species may discard a card (or several) from his hand to gain an effect. •	If the species with Intelligence is a Non-Carnivore, the player may discard a card on his turn during Feeding to take 2 Plant Food from the Food Bank. This ability may be used multiple times in a round, but only one card may be discarded during a player’s turn. •	If the species with Intelligence is a Carnivore, the player may discard multiple cards on his turn during Feeding. Each card discarded negates the effect of 1 Trait Card that is protecting a species. This can be used when the Carnivore is about to feed and lasts for 1 attack. This effect may not be used to negate a Scavenger Trait Card or any other trait that is not actively protecting a species from the Carnivore. ",
         effectBeforeRound : false,
         effect : "none",
@@ -131,7 +131,7 @@ const AllTraitCards =[
 
     LongNeck = {
         name: "Long Neck",
-        img : "./img/longNeck.jpg",
+        img : "./img/traitsCards/Long Neck.jpg",
         description : "Take 1 Plant Food from the Food Bank (not the Watering Hole) when the Food Cards are revealed.",
         effectBeforeRound : true,
         effect : "none",
@@ -141,7 +141,7 @@ const AllTraitCards =[
 
     PackHunting = {
         name :"Pack Hunting",
-        img :"./img/hardShell.jpg",
+        img :"./img/traitsCards/Pack Hunting.jpg",
         description : "Add 3 to this species’ Body Size when determining if it can attack another species.",
         effectBeforeRound : false,
         effect : "none",
@@ -152,7 +152,7 @@ const AllTraitCards =[
 
     Scavenger = {
         name :"Scavenger",
-        img :"./img/hardShell.jpg",
+        img :"./img/traitsCards/Scavenger.jpg",
         description : "Take 1 Meat Food from the Food Bank anytime a Carnivore takes food after attacking a species, including if a Carnivore attacks the species with the Scavenger trait. If this trait is on a Carnivore, it will take 1 extra Meat Food every time it makes a successful attack.",
         effectBeforeRound : false,
         effect : "none",
@@ -163,7 +163,7 @@ const AllTraitCards =[
 
     Symbiosis = {
         name :"Symbiosis",
-        img :"./img/hardShell.jpg",
+        img :"./img/traitsCards/Symbiosis.jpg",
         description : "If you have a species to this species’ right with a larger Body Size, this species cannot be attacked.",
         effectBeforeRound : false,
         effect : "none",
@@ -174,7 +174,7 @@ const AllTraitCards =[
 
     WarningCall = {
         name :"Warning Call",
-        img :"./img/hardShell.jpg",
+        img :"./img/traitsCards/Warning Call.jpg",
         description : "If you have a species to the right and/or left of a species with Warning Call, it/they cannot be attacked unless the Carnivore has Ambush. Warning Call does not protect the species that has the Warning Call trait.",
         effectBeforeRound : false,
         effect : "none",
