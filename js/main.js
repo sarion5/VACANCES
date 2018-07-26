@@ -1,8 +1,8 @@
-    //**              */
-    //                //
-    // MAIN FUNCTIONS //
-    //                //
-    //**              */
+    //*//////////////////////////////////////////////////////////////////////////////////////*/
+    //                                                                                       //
+    //                                       MAIN FUNCTIONS                                  //
+    //                                                                                       //
+    //*//////////////////////////////////////////////////////////////////////////////////////*/
 
     /**
      * initPlayers
@@ -55,11 +55,11 @@
 
 
 
-    //*     */
-    //      //
-    // MAIN //
-    //      //
-    //*     */
+    //*//////////////////////////////////////////////////////////////////////////////////////*/
+    //                                                                                       //
+    //                                           MAIN                                        //
+    //                                                                                       //
+    //*//////////////////////////////////////////////////////////////////////////////////////*/
 
     //players involved
     var players = initPlayers();
@@ -71,9 +71,18 @@
         //////////////////////////////
         //FunctionsRoundPartOne.js////
         //////////////////////////////
+
         // cards are distributed, the game is called off
         // if there isn't enough cards left
         roundPartOne(players, AllTraitCards);
+
+        function renderContent(){
+            jQuery(document).ready(function ($) {
+
+                $("#actionsThisTurn").html("blablabla");
+
+            })
+        }
 
         //////////////////////////////
         //FunctionsRoundPartTwo.js////
@@ -84,7 +93,7 @@
             for (let i = 0; i < players.length; i++) {
                 let currentPlayer = players[i];
 
-                
+
             }
         }
 
