@@ -62,7 +62,28 @@
 /*///////////////////////////*/
 /*///////////////////////////*/
 
+#player1TraitCards {
+    border : solid;
+    border-color: brown;
+    margin: 10px;
+}
+#player1Species {
+    border : solid;
+    border-color: green;
+    margin: 10px;
+}
+#player1TraitCards ul {
+    margin:20px;
+}
 #player1TraitCards li {
+    display: inline;
+    padding-block-end: 5px;
+}
+
+#player1Species ul {
+    margin:20px;
+}
+#player1Species li {
     display: inline;
 }
 
