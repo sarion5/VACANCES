@@ -76,21 +76,30 @@
         // if there isn't enough cards left
         roundPartOne(players, AllTraitCards);
 
-        function renderContent(players) {
+        function renderContent(players, AllTraitCards) {
             for (let i = 0; i < players.length; i++) {
                 let currentPlayer = players[i];
 
                 jQuery(document).ready(function ($) {
 
-                    let traitCardList = `<ul>`;
-                    for (i = 0; i < currentPlayer.cardsInHand.length; i++) {
-                        traitCardList += `<li>`;
-                        traitCardList += `<img src="./img/emptyImages/traitCardModel.png" width="120"/>`;
-                        traitCardList += `</li>`;
-                    }
-                    traitCardList += "</ul>";
+                    function generateTraitCardsList() {
 
-                    $(`#player1TraitCards`).html(traitCardList);
+                        let traitCardList = `<ul>`;
+
+                        for (i = 0; i < currentPlayer.cardsInHand.length; i++) {
+                            let currentImg = currentPlayer.cardsInHand[i].img;
+
+                            traitCardList += `<li>`;
+                            traitCardList += `<img src="${currentImg}" width="120"/>`;
+                            traitCardList += `</li>`;
+                        }
+
+                        traitCardList += "</ul>";
+
+                        $(`#player1TraitCards`).html(traitCardList);
+                    }
+                    generateTraitCardsList();
+
 
                 })
             }
