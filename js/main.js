@@ -76,7 +76,8 @@
         // if there isn't enough cards left
         roundPartOne(players, AllTraitCards);
 
-        
+        // the player can see their cards
+        // 
         renderContent(players);
 
         //////////////////////////////
