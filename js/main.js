@@ -18,7 +18,7 @@
 
         for (let i = 0; i < nbPlayers; i++) {
             let currentPlayerName = `player${i+1}`;
-            let currentPlayer = new Player(currentPlayerName, 1, 3, 0, []);
+            let currentPlayer = new Player(currentPlayerName, 3, 3, 0, []);
             players.push(currentPlayer);
         }
 

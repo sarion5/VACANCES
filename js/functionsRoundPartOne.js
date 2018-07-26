@@ -101,9 +101,13 @@ function renderContent(players) {
         let currentPlayer = players[i];
 
         jQuery(document).ready(function ($) {
-
+            /**
+             * generateTraitCardsList
+             * generate the pack of cards in the player's hand
+             */
             (function generateTraitCardsList() {
 
+                
                 let traitCardList = `<ul>`;
 
                 for (i = 0; i < currentPlayer.cardsInHand.length; i++) {
@@ -118,6 +122,22 @@ function renderContent(players) {
 
                 $(`#player1TraitCards`).html(traitCardList);
             })();
+
+            /**
+             * generateSpeciesList
+             * generate the species in the player's game
+             */
+            (function generateSpeciesList () {
+                let speciesList = `<ul>`;
+                for (i = 0; i < currentPlayer.species; i++) {
+                    speciesList += `<li>`;
+                    speciesList += `<img src="./img/emptyImages/specieBoardModel.png" width="120"/>`;
+                    speciesList += `</li>`;
+                }
+                speciesList += "</ul>";
+                $(`#player1Species`).html(speciesList);
+            })();
+            
 
         })
     }
