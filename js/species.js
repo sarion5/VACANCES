@@ -9,7 +9,7 @@ const AllTraitCards =[
         effectBeforeRound : false,
         effect : "none",
         foodValue : 3,
-        copiesNumber : 7
+        nbCopies : 7
     },
     Burrowing = {
         name : "Burrowing",
@@ -18,7 +18,7 @@ const AllTraitCards =[
         effectBeforeRound : false,
         effect : "none",
         foodValue :5,
-        copiesNumber :7
+        nbCopies :7
 
     },
     Carnivore = {
@@ -28,7 +28,7 @@ const AllTraitCards =[
         effectBeforeRound : false,
         effect : "none",
         foodValue : 9,
-        copiesNumber : 17
+        nbCopies : 17
 
     },
     Climbing = {
@@ -38,7 +38,7 @@ const AllTraitCards =[
         effectBeforeRound : false,
         effect : "none",
         foodValue : 5,
-        copiesNumber : 7
+        nbCopies : 7
 
     },
     Cooperation = {
@@ -48,7 +48,7 @@ const AllTraitCards =[
         effectBeforeRound : false,
         effect : "none",
         foodValue : 5,
-        copiesNumber : 7
+        nbCopies : 7
 
     },
 
@@ -59,7 +59,7 @@ const AllTraitCards =[
         effectBeforeRound : false,
         effect :"none",
         foodValue : 6,
-        copiesNumber : 7
+        nbCopies : 7
 
     },
 
@@ -70,7 +70,7 @@ const AllTraitCards =[
         effectBeforeRound : false,
         effect : "none",
         foodValue :5,
-        copiesNumber : 7
+        nbCopies : 7
 
     },
 
@@ -81,7 +81,7 @@ const AllTraitCards =[
         effectBeforeRound : true,
         effect : "none",
         foodValue: 7,
-        copiesNumber : 7
+        nbCopies : 7
 
     },
 
@@ -92,7 +92,7 @@ const AllTraitCards =[
         effectBeforeRound : false,
         effect :"none",
         foodValue : 7,
-        copiesNumber : 7
+        nbCopies : 7
 
     },
 
@@ -103,7 +103,7 @@ const AllTraitCards =[
         effectBeforeRound : false,
         effect : "none",
         foodValue : -2,
-        copiesNumber :7
+        nbCopies :7
 
     },
 
@@ -114,7 +114,7 @@ const AllTraitCards =[
         effectBeforeRound : false,
         effect : "none",
         foodValue : 0,
-        copiesNumber : 7
+        nbCopies : 7
 
     },
 
@@ -125,7 +125,7 @@ const AllTraitCards =[
         effectBeforeRound : false,
         effect : "none",
         foodValue : 1,
-        copiesNumber : 7
+        nbCopies : 7
 
     },
 
@@ -136,6 +136,6 @@ const AllTraitCards =[
         effectBeforeRound : true,
         effect : "none",
         foodValue : 3,
-        copiesNumber : 7
+        nbCopies : 7
     }
 ];

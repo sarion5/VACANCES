@@ -8,7 +8,7 @@
         each.effectBeforeRound = effectBeforeRound,
         each.effect = effect,
         each.foodValue = foodValue,
-        each.copiesNumber = copiesNumber
+        each.nbCopies = nbCopies
     }; */
 
     /**

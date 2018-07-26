@@ -54,7 +54,7 @@ function roundPartOne(players, AllTraitCards) {
             //e.g if there is 7 copies of the object "Ambush", there will be
             //7 copies of "Ambush" in the deck
             for (let j = 0; j < AllTraitCards.length; j++) {
-                for (let k = 0; k < AllTraitCards[j].copiesNumber; k++) {
+                for (let k = 0; k < AllTraitCards[j].nbCopies; k++) {
                     deck.push(AllTraitCards[j]);
                 }
             }
@@ -72,14 +72,12 @@ function roundPartOne(players, AllTraitCards) {
                 (currentPlayer.cardsInHand).push(currentCard)
 
                 //take off
-                let newDeck = deck.slice(currentCardNumber);
-                console.log(newDeck);
-                console.log(deck.length);
+                currentCard.nbCopies
             }
 
 
 
-            return deck;
+            return newDeck;
         }
 
 
