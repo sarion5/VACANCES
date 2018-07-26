@@ -1,8 +1,8 @@
-    //**              */
-    //                //
-    // MAIN FUNCTIONS //
-    //                //
-    //**              */
+    //*//////////////////////////////////////////////////////////////////////////////////////*/
+    //                                                                                       //
+    //                                       MAIN FUNCTIONS                                  //
+    //                                                                                       //
+    //*//////////////////////////////////////////////////////////////////////////////////////*/
 
     /**
      * initPlayers
@@ -55,11 +55,11 @@
 
 
 
-    //*     */
-    //      //
-    // MAIN //
-    //      //
-    //*     */
+    //*//////////////////////////////////////////////////////////////////////////////////////*/
+    //                                                                                       //
+    //                                           MAIN                                        //
+    //                                                                                       //
+    //*//////////////////////////////////////////////////////////////////////////////////////*/
 
     //players involved
     var players = initPlayers();
@@ -71,11 +71,26 @@
         //////////////////////////////
         //FunctionsRoundPartOne.js////
         //////////////////////////////
+
+        // cards are distributed, the game is called off
+        // if there isn't enough cards left
         roundPartOne(players, AllTraitCards);
+
+        
+        renderContent(players);
 
         //////////////////////////////
         //FunctionsRoundPartTwo.js////
         //////////////////////////////
+        //
+        //
+        function roundPartTwo(players) {
+            for (let i = 0; i < players.length; i++) {
+                let currentPlayer = players[i];
+
+
+            }
+        }
 
         //////////////////////////////
         //FunctionsRoundPartThree.js//
