@@ -25,17 +25,17 @@
         return players;
     }
 
-
-
-    //*     */
-    //      //
-    // MAIN //
-    //      //
-    //*     */
-
-    //players involved
-    var players = initPlayers();
-
+    /**
+     * checkDeckState
+     * 
+     * evaluate weither or not there still is enough cards in the deck for another round
+     * if so, at least two other rounds will follow
+     * if not, all the cards are re-shuffled for a last round and the game end.
+     * @param {Array} initDeck push the remaining cards into an array
+     * @param {Array} players 
+     * 
+     * @return {boolean} true if there is still enough cards to keep playing, false otherwise
+     */
     function checkDeckState(initDeck, players) {
 
         let remainingCards = initDeck(AllTraitCards).length;
@@ -53,11 +53,38 @@
         return isCardNumberHighEnough;
     }
 
+
+
+    //*     */
+    //      //
+    // MAIN //
+    //      //
+    //*     */
+
+    //players involved
+    var players = initPlayers();
+
+
+
     if (checkDeckState(initDeck, players)) {
-        ////////////////////////////
-        //FunctionsRoundPartOne.js//
-        ////////////////////////////
+
+        //////////////////////////////
+        //FunctionsRoundPartOne.js////
+        //////////////////////////////
         roundPartOne(players, AllTraitCards);
+
+        //////////////////////////////
+        //FunctionsRoundPartTwo.js////
+        //////////////////////////////
+
+        //////////////////////////////
+        //FunctionsRoundPartThree.js//
+        //////////////////////////////
+
+        //////////////////////////////
+        //FunctionsRoundPartFour.js///
+        //////////////////////////////
+
     } else {
         console.log("dernier tour");
     }
